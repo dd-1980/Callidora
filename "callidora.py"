@@ -1,0 +1,18 @@
+`#!/usr/bin/env python3`
+```
+import os
+import sys
+from replika import Callidora
+
+class CallidoraModel:
+ def __init__(self):
+ self.model = Callidora()
+
+ def iniciar(self):
+ print("Iniciando modelo de linguagem...")
+ self.model.iniciar()
+
+ def processar_comando(self, comando):
+ return self.model.processar_comando(comando)
+
+model = CallidoraModel()
